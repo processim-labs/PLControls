@@ -1,0 +1,40 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90;MonoAndroid10.0;</TargetFrameworks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    
+    <AssemblyName>ContentButton.FormsPlugin</AssemblyName>
+    <RootNamespace>ContentButton.FormsPlugin</RootNamespace>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(Configuration)'=='Release' ">
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />
+    <Compile Include="**\*.shared.cs" />
+  </ItemGroup>
+  
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+    <Compile Include="**\Android\*.android.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+    <Compile Include="**\iOS\*.ios.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'MonoAndroid10.0'">
+    <PackageReference Include="Xamarin.AndroidX.Core" Version="1.3.0" />
+  </ItemGroup>
+</Project>
