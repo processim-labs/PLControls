@@ -5,7 +5,7 @@
              x:Name="this">
     <ContentView.Content>
         <Grid RowSpacing="0" ColumnSpacing="0">
-            <Label Text="Mi boton" />
+            <ContentView x:Name="container"/>
             <Button BackgroundColor="Transparent" 
                     HorizontalOptions="FillAndExpand" 
                     VerticalOptions="FillAndExpand" 

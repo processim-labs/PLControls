@@ -24,7 +24,13 @@
                     </LinearGradientBrush>
                 </controls:ContentButton.Background>
             </controls:ContentButton>
-            <newcontrols:ContentButton Command="{Binding TapCommand}"/>
+            <newcontrols:ContentButton Command="{Binding TapCommand}">
+                <newcontrols:ContentButton.ButtonContent>
+                    <Grid BackgroundColor="Bisque">
+                        <Label Text="Oh yeah" HorizontalOptions="Center" TextColor="Red" FontSize="40"/>
+                    </Grid>
+                </newcontrols:ContentButton.ButtonContent>
+            </newcontrols:ContentButton>
             <Frame BackgroundColor="LightSlateGray" HeightRequest="500" VerticalOptions="FillAndExpand">
                 <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Space Filler" TextColor="White"/>
             </Frame>
