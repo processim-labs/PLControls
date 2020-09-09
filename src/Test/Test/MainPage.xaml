@@ -3,38 +3,49 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:ContentButton.FormsPlugin;assembly=ContentButton.FormsPlugin"
              xmlns:newcontrols="clr-namespace:Test.Controls"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
              x:Class="Test.MainPage">
 
-    <ScrollView>
-        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-            <Frame BackgroundColor="LightSlateGray" HeightRequest="500" VerticalOptions="FillAndExpand">
-                <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Space Filler" TextColor="White"/>
-            </Frame>
-            <controls:ContentButton CornerRadius="20" TouchEffectColor="Red" VerticalOptions="Center" WidthRequest="100" HeightRequest="100" Command="{Binding TapCommand}">
-                <controls:ContentButton.Content>
-                    <Label Text="Hola" TextColor="Black" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center"/>
-                </controls:ContentButton.Content>
-                <controls:ContentButton.Background>
-                    <LinearGradientBrush StartPoint="0,0"
+    <StackLayout>
+        <newcontrols:ContentButton HeightRequest="100" Command="{Binding TapCommand}">
+            <newcontrols:ContentButton.ButtonContent>
+                <Grid BackgroundColor="Pink">
+                    <Label Text="Dude" HorizontalOptions="Center" TextColor="Red" FontSize="40"/>
+                </Grid>
+            </newcontrols:ContentButton.ButtonContent>
+        </newcontrols:ContentButton>
+        <ScrollView>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Frame BackgroundColor="LightSlateGray" HeightRequest="500" VerticalOptions="FillAndExpand">
+                    <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Space Filler" TextColor="White"/>
+                </Frame>
+                <controls:ContentButton CornerRadius="20" TouchEffectColor="Red" VerticalOptions="Center" WidthRequest="100" HeightRequest="100" Command="{Binding TapCommand}">
+                    <controls:ContentButton.Content>
+                        <Label Text="Hola" TextColor="Black" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    </controls:ContentButton.Content>
+                    <controls:ContentButton.Background>
+                        <LinearGradientBrush StartPoint="0,0"
                              EndPoint="1,0">
-                        <GradientStop Color="Yellow"
+                            <GradientStop Color="Yellow"
                           Offset="0.1"/>
-                        <GradientStop Color="Green"
+                            <GradientStop Color="Green"
                           Offset="1.0"/>
-                    </LinearGradientBrush>
-                </controls:ContentButton.Background>
-            </controls:ContentButton>
-            <newcontrols:ContentButton Command="{Binding TapCommand}">
-                <newcontrols:ContentButton.ButtonContent>
-                    <Grid BackgroundColor="Bisque">
-                        <Label Text="Oh yeah" HorizontalOptions="Center" TextColor="Red" FontSize="40"/>
-                    </Grid>
-                </newcontrols:ContentButton.ButtonContent>
-            </newcontrols:ContentButton>
-            <Frame BackgroundColor="LightSlateGray" HeightRequest="500" VerticalOptions="FillAndExpand">
-                <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Space Filler" TextColor="White"/>
-            </Frame>
-        </StackLayout>
-    </ScrollView>
+                        </LinearGradientBrush>
+                    </controls:ContentButton.Background>
+                </controls:ContentButton>
+                <newcontrols:ContentButton Command="{Binding TapCommand}">
+                    <newcontrols:ContentButton.ButtonContent>
+                        <Grid BackgroundColor="Bisque">
+                            <Label Text="Dude" HorizontalOptions="Center" TextColor="Red" FontSize="40"/>
+                        </Grid>
+                    </newcontrols:ContentButton.ButtonContent>
+                </newcontrols:ContentButton>
+                <Frame BackgroundColor="LightSlateGray" HeightRequest="500" VerticalOptions="FillAndExpand">
+                    <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Space Filler" TextColor="White"/>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 
 </ContentPage>

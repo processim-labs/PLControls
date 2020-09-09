@@ -9,6 +9,7 @@
             <Button BackgroundColor="Transparent" 
                     HorizontalOptions="FillAndExpand" 
                     VerticalOptions="FillAndExpand" 
+                    Pressed="Button_Pressed"
                     Command="{Binding Source={x:Reference this}, Path=Command}"/>
         </Grid>
     </ContentView.Content>

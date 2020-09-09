@@ -42,20 +42,17 @@ namespace Test.Controls
 
         public static readonly BindableProperty CommandParameterProperty = BindableProperty.Create(nameof(CommandParameter), typeof(object), typeof(ContentButton), null, propertyChanged: (bindable, oldValue, newValie) => ((ContentButton)bindable).CommandCanExecuteChanged(bindable, EventArgs.Empty));
 
-        private static void ButtonContentChanged(BindableObject bindable, object oldvalue, object newvalue)
+        private static void ButtonContentChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            if (newvalue != null) 
+            if (newValue != null && bindable != null) 
             {
-                var control = (ContentButton)bindable;
-                var value = (View)newvalue;
-
-                if (control.container == null) 
-                    Debug.WriteLine("ViewContent null!");
-
-                if (ReferenceEquals(newvalue, control))
-                    Debug.WriteLine("New value is myself!!!!");
-
-                control.container.Content = value;
+                if (bindable is ContentButton control && newValue is View newView) 
+                {
+                    if(control.container != null) 
+                    {
+                        control.container.Content = newView;
+                    }
+                }
             }
         }
 
@@ -70,6 +67,16 @@ namespace Test.Controls
             if (Command != null)
                 Command.CanExecuteChanged += CommandCanExecuteChanged;
             CommandCanExecuteChanged(this, EventArgs.Empty);
+        }
+
+        private async void Button_Pressed(object sender, EventArgs e)
+        {
+            if (container != null) 
+            {
+                uint halfAnimationPeriod = 50;
+                await container.FadeTo(0.5, halfAnimationPeriod);
+                await container.FadeTo(1, halfAnimationPeriod);
+            }
         }
     }
 }

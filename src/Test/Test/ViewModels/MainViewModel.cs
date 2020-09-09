@@ -12,7 +12,7 @@ namespace Test.ViewModels
 
         private async void ShowPopup()
         {
-            await App.Current.MainPage.DisplayAlert("Titulo","Hola", "OK");
+            await App.Current.MainPage.DisplayAlert("What does it say?","Sweet", "OK");
         }
     }
 }
