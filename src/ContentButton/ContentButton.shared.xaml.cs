@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +7,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Test.Controls
+namespace ContentButton.FormsPlugin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     [ContentProperty("ButtonContent")]
@@ -25,7 +24,7 @@ namespace Test.Controls
             set => SetValue(CommandProperty, value);
         }
 
-        public View ButtonContent 
+        public View ButtonContent
         {
             get => (View)GetValue(ContentProperty);
             set => SetValue(ContentProperty, value);
@@ -44,11 +43,11 @@ namespace Test.Controls
 
         private static void ButtonContentChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            if (newValue != null && bindable != null) 
+            if (newValue != null && bindable != null)
             {
-                if (bindable is ContentButton control && newValue is View newView) 
+                if (bindable is ContentButton control && newValue is View newView)
                 {
-                    if(control.container != null) 
+                    if (control.container != null)
                     {
                         control.container.Content = newView;
                     }
@@ -71,7 +70,7 @@ namespace Test.Controls
 
         private async void Button_Pressed(object sender, EventArgs e)
         {
-            if (container != null) 
+            if (container != null)
             {
                 uint halfAnimationPeriod = 50;
                 await container.FadeTo(0.5, halfAnimationPeriod);

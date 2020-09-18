@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Test.Controls.ContentButton"
+             x:Class="ContentButton.FormsPlugin.ContentButton"
              x:Name="this">
-    <ContentView.Content>
+  <ContentView.Content>
         <Grid RowSpacing="0" ColumnSpacing="0">
             <ContentView x:Name="container"/>
             <Button BackgroundColor="Transparent" 

@@ -18,10 +18,4 @@
   <ItemGroup>
     <ProjectReference Include="..\..\ContentButton\ContentButton.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Controls\ContentButton.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
 </Project>

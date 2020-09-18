@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />
+    <Compile Include="**\*.shared.xaml.cs" />
     <Compile Include="**\*.shared.cs" />
   </ItemGroup>
   
@@ -36,5 +37,11 @@
 
   <ItemGroup Condition="'$(TargetFramework)' == 'MonoAndroid10.0'">
     <PackageReference Include="Xamarin.AndroidX.Core" Version="1.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ContentButton.shared.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
