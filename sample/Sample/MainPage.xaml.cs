@@ -4,10 +4,10 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Test.ViewModels;
+using Sample.ViewModels;
 using Xamarin.Forms;
 
-namespace Test
+namespace Sample
 {
     public partial class MainPage : ContentPage
     {

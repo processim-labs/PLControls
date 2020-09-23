@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Test
+namespace Sample
 {
     public partial class App : Application
     {

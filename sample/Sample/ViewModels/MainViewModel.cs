@@ -4,7 +4,7 @@ using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace Test.ViewModels
+namespace Sample.ViewModels
 {
     public class MainViewModel: BaseViewModel
     {

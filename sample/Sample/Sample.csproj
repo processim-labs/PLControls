@@ -16,6 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\PLControls\PLControls.csproj" />
+    <ProjectReference Include="..\..\src\PLControls\PLControls.csproj" />
   </ItemGroup>
 </Project>

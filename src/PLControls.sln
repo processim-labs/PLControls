@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PLControls", "PLControls\PLControls.csproj", "{273DCB87-E4E0-4352-AC8D-C69D1ACFD18D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Android", "Test\Test.Android\Test.Android.csproj", "{76B8D1C5-CF2A-4137-8701-3DE54709EE37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Android", "..\sample\Sample.Android\Sample.Android.csproj", "{76B8D1C5-CF2A-4137-8701-3DE54709EE37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.iOS", "Test\Test.iOS\Test.iOS.csproj", "{36141E50-A971-4C83-A9B8-C0093A257BE8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.iOS", "..\sample\Sample.iOS\Sample.iOS.csproj", "{36141E50-A971-4C83-A9B8-C0093A257BE8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test\Test.csproj", "{7FBF7034-9A0D-434A-9FA2-03CF287E6BEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample", "..\sample\Sample\Sample.csproj", "{7FBF7034-9A0D-434A-9FA2-03CF287E6BEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

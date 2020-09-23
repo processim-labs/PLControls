@@ -4,7 +4,7 @@
              xmlns:controls="clr-namespace:PLControls.FormsPlugin;assembly=PLControls.FormsPlugin"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true"
-             x:Class="Test.MainPage">
+             x:Class="Sample.MainPage">
 
     <StackLayout>
         <controls:ContentButton HeightRequest="100" Command="{Binding TapCommand}">
