@@ -16,6 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ContentButton\ContentButton.csproj" />
+    <ProjectReference Include="..\..\PLControls\PLControls.csproj" />
   </ItemGroup>
 </Project>

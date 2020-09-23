@@ -89,9 +89,9 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ContentButton\ContentButton.csproj">
+    <ProjectReference Include="..\..\PLControls\PLControls.csproj">
       <Project>{273dcb87-e4e0-4352-ac8d-c69d1acfd18d}</Project>
-      <Name>ContentButton</Name>
+      <Name>PLControls</Name>
     </ProjectReference>
     <ProjectReference Include="..\Test\Test.csproj">
       <Project>{507FC099-9234-45D1-AC82-A6099CBD93FB}</Project>

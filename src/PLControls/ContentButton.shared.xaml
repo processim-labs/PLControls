@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ContentButton.FormsPlugin.ContentButton"
-             x:Name="this">
-  <ContentView.Content>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="PLControls.FormsPlugin.ContentButton"
+       Padding="0"
+       IsClippedToBounds="True"
+       x:Name="this">
+  <Frame.Content>
         <Grid RowSpacing="0" ColumnSpacing="0">
             <ContentView x:Name="container"/>
             <Button BackgroundColor="Transparent" 
@@ -12,5 +14,5 @@
                     Pressed="Button_Pressed"
                     Command="{Binding Source={x:Reference this}, Path=Command}"/>
         </Grid>
-    </ContentView.Content>
-</ContentView>
+    </Frame.Content>
+</Frame>

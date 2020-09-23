@@ -5,8 +5,36 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     
-    <AssemblyName>ContentButton.FormsPlugin</AssemblyName>
-    <RootNamespace>ContentButton.FormsPlugin</RootNamespace>
+    <AssemblyName>PLControls.FormsPlugin</AssemblyName>
+    <RootNamespace>PLControls.FormsPlugin</RootNamespace>
+    <PackageId>PL.Xamarin.Controls</PackageId>
+
+    <Product>Cross-platform controls for Xamarin.Forms</Product>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
+    <Version>1.0.0</Version>
+    <PackOnBuild>true</PackOnBuild>
+    <NeutralLanguage>en</NeutralLanguage>
+    
+    <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
+    <PackageProjectUrl>https://github.com/processim-labs/PLControls</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/processim-labs/PLControls</RepositoryUrl>
+    <PackageReleaseNotes>
+    </PackageReleaseNotes>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>xamarin, netstandard, xamarin-controls, controls, windows, android, xamarin.forms, ios</PackageTags>
+
+    <Title>Cross-platform controls for Xamarin.Forms</Title>
+    <Summary>Usefull controls used in our apps.</Summary>
+    <Description>
+      Cross-platform controls for Xamarin.Forms
+    </Description>
+
+    <Owners>Processim Labs</Owners>
+    <Authors>Processim Labs</Authors>
+    <Copyright>Copyright 2020</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
   
   <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
@@ -43,5 +71,9 @@
     <EmbeddedResource Update="ContentButton.shared.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\resources\Images\icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 </Project>

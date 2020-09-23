@@ -7,11 +7,11 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ContentButton.FormsPlugin
+namespace PLControls.FormsPlugin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     [ContentProperty("ButtonContent")]
-    public partial class ContentButton : ContentView
+    public partial class ContentButton : Frame
     {
         public ContentButton()
         {
