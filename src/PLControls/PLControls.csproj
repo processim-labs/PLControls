@@ -19,7 +19,7 @@
     <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
     <PackageProjectUrl>https://github.com/processim-labs/PLControls</PackageProjectUrl>
     <RepositoryUrl>https://github.com/processim-labs/PLControls</RepositoryUrl>
-    <PackageReleaseNotes>
+    <PackageReleaseNotes>Minor fixes
     </PackageReleaseNotes>
     <PackageIcon>icon.png</PackageIcon>
     <PackageTags>xamarin, netstandard, xamarin-controls, controls, windows, android, xamarin.forms, ios</PackageTags>
