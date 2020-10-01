@@ -73,8 +73,8 @@ namespace PLControls.FormsPlugin
             if (container != null)
             {
                 uint halfAnimationPeriod = 50;
-                await container.FadeTo(0.5, halfAnimationPeriod);
-                await container.FadeTo(1, halfAnimationPeriod);
+                await this.FadeTo(0.5, halfAnimationPeriod);
+                await this.FadeTo(1, halfAnimationPeriod);
             }
         }
     }
