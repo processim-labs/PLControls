@@ -12,14 +12,14 @@
     <Product>Cross-platform controls for Xamarin.Forms</Product>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     
     <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
     <PackageProjectUrl>https://github.com/processim-labs/PLControls</PackageProjectUrl>
     <RepositoryUrl>https://github.com/processim-labs/PLControls</RepositoryUrl>
-    <PackageReleaseNotes>Minor fixes
+    <PackageReleaseNotes>Fix CommandParameter
     </PackageReleaseNotes>
     <PackageIcon>icon.png</PackageIcon>
     <PackageTags>xamarin, netstandard, xamarin-controls, controls, windows, android, xamarin.forms, ios</PackageTags>
