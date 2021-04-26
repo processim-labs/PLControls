@@ -12,7 +12,8 @@
                     HorizontalOptions="FillAndExpand" 
                     VerticalOptions="FillAndExpand" 
                     Pressed="Button_Pressed"
-                    Command="{Binding Source={x:Reference this}, Path=Command}"/>
+                    Command="{Binding Source={x:Reference this}, Path=Command}"
+                    CommandParameter="{Binding Source={x:Reference this}, Path=CommandParameter}"/>
         </Grid>
     </Frame.Content>
 </Frame>

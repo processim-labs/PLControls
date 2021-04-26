@@ -39,7 +39,7 @@ namespace PLControls.FormsPlugin
             set => SetValue(CommandParameterProperty, value);
         }
 
-        public static readonly BindableProperty CommandParameterProperty = BindableProperty.Create(nameof(CommandParameter), typeof(object), typeof(ContentButton), null, propertyChanged: (bindable, oldValue, newValie) => ((ContentButton)bindable).CommandCanExecuteChanged(bindable, EventArgs.Empty));
+        public static readonly BindableProperty CommandParameterProperty = BindableProperty.Create(nameof(CommandParameter), typeof(object), typeof(ContentButton), null, propertyChanged: (bindable, oldValue, newValue) => ((ContentButton)bindable).CommandCanExecuteChanged(bindable, EventArgs.Empty));
 
         private static void ButtonContentChanged(BindableObject bindable, object oldValue, object newValue)
         {
